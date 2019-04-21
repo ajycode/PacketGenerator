@@ -20,24 +20,6 @@ namespace PacketGenerator
         {
             var template = new Template();
 
-            // 扫项目列表
-            //var r_projenums = from t in asm.GetTypes() where ( t.IsEnum ) && t.Namespace != libNS && t.Name == projEnum select t;
-            //if( r_projenums.Count() > 0 )
-            //{
-            //    var e = r_projenums.First();
-            //    var r_fields = e.GetFields( BindingFlags.Static | BindingFlags.Public );
-            //    foreach( var r_field in r_fields )
-            //    {
-            //        var p = new Project { Name = r_field.Name };
-            //        foreach( var a in r_field.GetCustomAttributes( false ) )
-            //        {
-            //            if( a is LIB.Desc ) p.Desc = ( (LIB.Desc)a ).Value;
-            //        }
-            //        template.Projects.Add( p );
-            //    }
-            //}
-
-
             // 扫枚举
             var r_enums = ( from t in asm.GetTypes() where ( t.IsEnum ) select t ).ToList(); ;
             foreach( var r_enum in r_enums )
@@ -94,8 +76,6 @@ namespace PacketGenerator
                 foreach( var r_attribute in r_class.GetCustomAttributes( false ) )
                 {
                     if( r_attribute is LIB.Desc ) c.Desc = ( (LIB.Desc)r_attribute ).Value;
-                    //else if( r_attribute is LIB.Decode ) c.Decode.AddRange( ( (LIB.Decode)r_attribute ).Value.Select( o => template.Projects.FirstOrDefault( oo => oo.Name == o.ToString() ) ) );
-                    //else if( r_attribute is LIB.Encode ) c.Encode.AddRange( ( (LIB.Encode)r_attribute ).Value.Select( o => template.Projects.FirstOrDefault( oo => oo.Name == o.ToString() ) ) );
                     //// more class attributes
                 }
                 template.Classes.Add( c );
@@ -152,8 +132,6 @@ namespace PacketGenerator
                                 f.Condation.Add( c.Fields.Find( a => a.Name == (string)ps[ i ] ), ps[ i + 1 ] );
                             }
                         }
-                        //else if( r_attribute is LIB.Decode ) c.Decode.AddRange( ( (LIB.Decode)r_attribute ).Value.Select( o => template.Projects.FirstOrDefault( oo => oo.Name == o.ToString() ) ) );
-                        //else if( r_attribute is LIB.Encode ) c.Encode.AddRange( ( (LIB.Encode)r_attribute ).Value.Select( o => template.Projects.FirstOrDefault( oo => oo.Name == o.ToString() ) ) );
                         //// more field attributes
                     }
                 }
@@ -166,16 +144,6 @@ namespace PacketGenerator
             //{
             //    // todo
             //}
-
-            //// 整理 enable 属性( 合并 encode & decode )
-            //foreach( var c in template.Classes )
-            //{
-            //    if( c.Encode.Count + c.Decode.Count == 0 )
-            //        c.Enable = c.Encode = c.Decode = template.Projects;
-            //    else
-            //        c.Enable = c.Encode.Concat( c.Decode ).Distinct().ToList();
-            //}
-
 
             // 整理命名空间
             template.Namespaces = template.Classes.Select( a => a.Namespace ).Concat( template.Enums.Select( a => a.Namespace ) ).Distinct().ToList();
@@ -341,24 +309,3 @@ namespace PacketGenerator
     }
 }
 
-//else if( a is Enabled ) fps.Enabled = ( (Enabled)a ).Value;
-//else if( a is DecodeCondation ) fps.DecodeCondation = (DecodeCondation)a;
-//else if( a is EncodeCondation ) fps.EncodeCondation = (EncodeCondation)a;
-// "ChkValue": fps.MinValue = ((ChkValue)a).Min; fps.MinValue = ((ChkValue)a).Max; break;
-
-// 扫空 interface（用于 Decode, Encode 的参数列表）
-//var interfaces = from t in asm.GetTypes() where t.IsInterface && t.Namespace != libNS select t;
-//foreach( var i in interfaces )
-//{
-//    var p = new Project { Name = i.Name };
-//    foreach( var a in i.GetCustomAttributes( false ) )
-//    {
-//        if( a is Desc ) p.Desc = ( (Desc)a ).Value;
-//        // more proj attributes
-//    }
-//    template.Projects.Add( p );
-//}
-//else if( a is Enabled ) cps.Enabled = ( (Enabled)a ).Value;
-//else if( a is Opcode ) cps.Opcode = ( (Opcode)a ).Value;
-//else if( a is Returns ) cps.Results = ( (Returns)a ).Value.ToList();
-//else if( a is CallBy ) cps.CallBy = ( (CallBy)a ).Value.ToList();

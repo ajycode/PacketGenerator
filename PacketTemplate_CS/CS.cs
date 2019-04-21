@@ -2,10 +2,10 @@
 using PacketLibrary;
 using System;
 
-[Desc("会计注册")]
+[Desc("会计注册"), Condation("name", "安建宇")]
 class CS_Accountant_Register
 {
-    [Limit (0,30),Desc("真实姓名"),Get(),Set()]
+    [Limit (0,30),Desc("真实姓名")]
     string name;
     [Limit (0,300),Desc("收件地址")]
     string acceptanceAddress;
@@ -29,7 +29,7 @@ class CS_Accountant_Register
     string nickName;
     [Limit( 0, 3 ), Desc( "性别(请传：男或女)" )]
     string gender;
-    [Limit( 0, 150 ), Desc( "电子邮件" )]
+    [Limit( 0, 150 ), Desc( "电子邮件" ), Default("电子邮件")]
     string emmail;
     [Limit( 0, 3000 ), Desc( "自我介绍" )]
     string selfIntroduction;
@@ -384,7 +384,7 @@ class CS_Customer_Cancel_Order
 }
 
 [Desc( "获取会计列表" )]
-enum CS_Accountant_GetListSortData_Type
+enum CS_Accountant_GetListSortData_Type : byte
 {
     [Desc("默认方式")]
     SortDefault,

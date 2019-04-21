@@ -60,3 +60,15 @@ E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Debug\PacketLibrary.pdb
 E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Debug\PacketTemplate_CS.pdb
 E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Debug\PacketTemplate_SC.pdb
 E:\项目代码\会来\PkgGenerator\PacketGenerator\obj\Debug\PacketGenerator.csprojResolveAssemblyReference.cache
+E:\GitHubProjects\PkgGenerator\PacketGenerator\bin\Debug\PacketGenerator.exe.config
+E:\GitHubProjects\PkgGenerator\PacketGenerator\obj\Debug\PacketGenerator.exe
+E:\GitHubProjects\PkgGenerator\PacketGenerator\obj\Debug\PacketGenerator.pdb
+E:\GitHubProjects\PkgGenerator\PacketGenerator\bin\Debug\PacketGenerator.exe
+E:\GitHubProjects\PkgGenerator\PacketGenerator\bin\Debug\PacketGenerator.pdb
+E:\GitHubProjects\PkgGenerator\PacketGenerator\bin\Debug\PacketLibrary.dll
+E:\GitHubProjects\PkgGenerator\PacketGenerator\bin\Debug\PacketTemplate_CS.dll
+E:\GitHubProjects\PkgGenerator\PacketGenerator\bin\Debug\PacketTemplate_SC.dll
+E:\GitHubProjects\PkgGenerator\PacketGenerator\bin\Debug\PacketLibrary.pdb
+E:\GitHubProjects\PkgGenerator\PacketGenerator\bin\Debug\PacketTemplate_CS.pdb
+E:\GitHubProjects\PkgGenerator\PacketGenerator\bin\Debug\PacketTemplate_SC.pdb
+E:\GitHubProjects\PkgGenerator\PacketGenerator\obj\Debug\PacketGenerator.csprojResolveAssemblyReference.cache

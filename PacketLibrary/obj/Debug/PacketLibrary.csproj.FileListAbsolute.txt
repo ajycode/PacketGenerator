@@ -12,3 +12,8 @@ E:\项目代码\会来\PkgGenerator\PacketLibrary\bin\Debug\PacketLibrary.pdb
 E:\项目代码\会来\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.csprojResolveAssemblyReference.cache
 E:\项目代码\会来\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.dll
 E:\项目代码\会来\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.pdb
+E:\GitHubProjects\PkgGenerator\PacketLibrary\bin\Debug\PacketLibrary.dll
+E:\GitHubProjects\PkgGenerator\PacketLibrary\bin\Debug\PacketLibrary.pdb
+E:\GitHubProjects\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.csprojResolveAssemblyReference.cache
+E:\GitHubProjects\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.dll
+E:\GitHubProjects\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.pdb

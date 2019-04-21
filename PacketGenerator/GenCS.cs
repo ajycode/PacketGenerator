@@ -125,20 +125,12 @@ namespace " + pn + @"PkgTypes
                 }
                 dc.Add( cmdId, pn + @"PkgTypes." + c.Name );
                 dcDesc.Add( cmdId, c );
-                // dcDesc.Add( cmdId, pn + @"PkgTypes." + c.Name+@"( "+c.Desc+@" )" );
-                //if( c.Fields.Count > 0 )
-
-                //{
+                
                 // 生成静态直写函数
                 sb.Append( @"
         public const short commandType = " + cmdId + @"; 
 " );
 
-
-                //if( c.Fields.Count == 0 ) continue;
-                // 生成 ByteBuffer 接口函数的定义
-                // todo: namespace support
-                //short cmdId = " + cmdId + @";
                 sb.Append( @"
         public void WriteToBuffer( ByteBuffer bb )
         {" );

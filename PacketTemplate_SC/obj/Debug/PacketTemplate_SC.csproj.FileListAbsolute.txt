@@ -26,3 +26,10 @@ E:\项目代码\会来\PkgGenerator\PacketTemplate_SC\bin\Debug\PacketLibrary.pd
 E:\项目代码\会来\PkgGenerator\PacketTemplate_SC\obj\Debug\PacketTemplate_SC.csprojResolveAssemblyReference.cache
 E:\项目代码\会来\PkgGenerator\PacketTemplate_SC\obj\Debug\PacketTemplate_SC.dll
 E:\项目代码\会来\PkgGenerator\PacketTemplate_SC\obj\Debug\PacketTemplate_SC.pdb
+E:\GitHubProjects\PkgGenerator\PacketTemplate_SC\bin\Debug\PacketTemplate_SC.dll
+E:\GitHubProjects\PkgGenerator\PacketTemplate_SC\bin\Debug\PacketTemplate_SC.pdb
+E:\GitHubProjects\PkgGenerator\PacketTemplate_SC\bin\Debug\PacketLibrary.dll
+E:\GitHubProjects\PkgGenerator\PacketTemplate_SC\bin\Debug\PacketLibrary.pdb
+E:\GitHubProjects\PkgGenerator\PacketTemplate_SC\obj\Debug\PacketTemplate_SC.csprojResolveAssemblyReference.cache
+E:\GitHubProjects\PkgGenerator\PacketTemplate_SC\obj\Debug\PacketTemplate_SC.dll
+E:\GitHubProjects\PkgGenerator\PacketTemplate_SC\obj\Debug\PacketTemplate_SC.pdb

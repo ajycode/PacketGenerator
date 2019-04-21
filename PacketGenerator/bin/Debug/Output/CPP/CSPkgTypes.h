@@ -83,7 +83,7 @@ namespace CSPkgTypes
 namespace CSPkgTypes
 {
     // 获取会计列表
-    enum class CS_Accountant_GetListSortData_Type : int
+    enum class CS_Accountant_GetListSortData_Type : uint8
     {
         SortDefault = 0, // 默认方式
         SortGrade = 1, // 评分

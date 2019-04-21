@@ -28,7 +28,7 @@ public class CS_Accountant_GetListSortData implements IBBWriter, IBBReader
 
     public void ReadFromBB( ByteBuffer bb )
     {
-        type = CS_Accountant_GetListSortData_Type.valueOf( bb.ReadInteger() );
+        type = CS_Accountant_GetListSortData_Type.valueOf( bb.ReadByte() );
         sortType = bb.ReadBoolean();
     }
 

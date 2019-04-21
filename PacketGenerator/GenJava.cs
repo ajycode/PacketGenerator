@@ -177,19 +177,13 @@ public class " + c.Name + @" implements IBBWriter, IBBReader
                     sb.Append( ";" );
                 }
                 dc.Add( cmdId, c.Name );
-                //if( c.Fields.Count > 0 )
 
-                //{
                 // 生成静态直写函数
                 sb.Append( @"
     public static final short commandType = " + cmdId + @"; 
 " );
 
 
-                //if( c.Fields.Count == 0 ) continue;
-                // 生成 ByteBuffer 接口函数的定义
-                // todo: namespace support
-                //short cmdId = " + cmdId + @";
                 sb.Append( @"
     public void WriteToBB( ByteBuffer bb )
     {" );

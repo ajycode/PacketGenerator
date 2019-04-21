@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace CSPkgTypes
 {
     // 获取会计列表
-    public enum  CS_Accountant_GetListSortData_Type : int
+    public enum  CS_Accountant_GetListSortData_Type : byte
     {
         /// <summary>
         /// 默认方式

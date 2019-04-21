@@ -89,8 +89,6 @@
     <Compile Include="GenCPP.cs" />
     <Compile Include="GenCS.cs" />
     <Compile Include="GenJava.cs" />
-    <Compile Include="GenEmpty.cs" />
-    <Compile Include="GenLua.cs" />
     <Compile Include="TemplateScaner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
