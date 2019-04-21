@@ -1,0 +1,14 @@
+D:\svn\db2code\cs\PkgGenerator\PacketLibrary\bin\Debug\PacketLibrary.dll
+D:\svn\db2code\cs\PkgGenerator\PacketLibrary\bin\Debug\PacketLibrary.pdb
+D:\svn\db2code\cs\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.dll
+D:\svn\db2code\cs\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.pdb
+D:\svn\repo\xxx\PkgGenerator\PacketLibrary\bin\Debug\PacketLibrary.dll
+D:\svn\repo\xxx\PkgGenerator\PacketLibrary\bin\Debug\PacketLibrary.pdb
+D:\svn\repo\xxx\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.csprojResolveAssemblyReference.cache
+D:\svn\repo\xxx\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.dll
+D:\svn\repo\xxx\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.pdb
+E:\项目代码\会来\PkgGenerator\PacketLibrary\bin\Debug\PacketLibrary.dll
+E:\项目代码\会来\PkgGenerator\PacketLibrary\bin\Debug\PacketLibrary.pdb
+E:\项目代码\会来\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.csprojResolveAssemblyReference.cache
+E:\项目代码\会来\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.dll
+E:\项目代码\会来\PkgGenerator\PacketLibrary\obj\Debug\PacketLibrary.pdb

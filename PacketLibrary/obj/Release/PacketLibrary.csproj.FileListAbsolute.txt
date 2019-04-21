@@ -1,0 +1,4 @@
+E:\项目代码\会来\PkgGenerator\PacketLibrary\bin\Release\PacketLibrary.dll
+E:\项目代码\会来\PkgGenerator\PacketLibrary\bin\Release\PacketLibrary.pdb
+E:\项目代码\会来\PkgGenerator\PacketLibrary\obj\Release\PacketLibrary.dll
+E:\项目代码\会来\PkgGenerator\PacketLibrary\obj\Release\PacketLibrary.pdb

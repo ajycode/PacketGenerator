@@ -1,0 +1,12 @@
+E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Release\PacketGenerator.exe.config
+E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Release\PacketGenerator.exe
+E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Release\PacketGenerator.pdb
+E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Release\PacketLibrary.dll
+E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Release\PacketTemplate_CS.dll
+E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Release\PacketTemplate_SC.dll
+E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Release\PacketLibrary.pdb
+E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Release\PacketTemplate_CS.pdb
+E:\项目代码\会来\PkgGenerator\PacketGenerator\bin\Release\PacketTemplate_SC.pdb
+E:\项目代码\会来\PkgGenerator\PacketGenerator\obj\Release\PacketGenerator.csprojResolveAssemblyReference.cache
+E:\项目代码\会来\PkgGenerator\PacketGenerator\obj\Release\PacketGenerator.exe
+E:\项目代码\会来\PkgGenerator\PacketGenerator\obj\Release\PacketGenerator.pdb

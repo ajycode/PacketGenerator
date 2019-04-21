@@ -1,0 +1,1573 @@
+﻿
+var sb = new StringBuilder();
+short pkgId = bb.ReadShort();
+switch( pkgId )
+{
+    case CSPkgTypes.CS_Accountant_Register.commandType :
+        {
+            CSPkgTypes.CS_Accountant_Register myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Accountant_Register>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Accountant_Register\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计注册  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Account_Register_IsExists.commandType :
+        {
+            CSPkgTypes.CS_Account_Register_IsExists myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Account_Register_IsExists>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Account_Register_IsExists\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计判断登陆名是否存在  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Account_Login.commandType :
+        {
+            CSPkgTypes.CS_Account_Login myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Account_Login>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Account_Login\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计登陆  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Account_GetProduct.commandType :
+        {
+            CSPkgTypes.CS_Account_GetProduct myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Account_GetProduct>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Account_GetProduct\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计获取本人受理业务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Product_Manage.commandType :
+        {
+            CSPkgTypes.CS_Product_Manage myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Product_Manage>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Product_Manage\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计更新或添加个人受理业务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Account_GetDetails.commandType :
+        {
+            CSPkgTypes.CS_Account_GetDetails myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Account_GetDetails>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Account_GetDetails\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计主页个人信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_Register.commandType :
+        {
+            CSPkgTypes.CS_Customer_Register myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_Register>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_Register\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司注册  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_Register_IsExists.commandType :
+        {
+            CSPkgTypes.CS_Customer_Register_IsExists myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_Register_IsExists>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_Register_IsExists\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司注册用户名检测  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Industry_AllSector.commandType :
+        {
+            CSPkgTypes.CS_Industry_AllSector myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Industry_AllSector>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Industry_AllSector\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取全部行业分类  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_Login.commandType :
+        {
+            CSPkgTypes.CS_Customer_Login myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_Login>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_Login\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司登陆  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Acctountant_GetAround.commandType :
+        {
+            CSPkgTypes.CS_Acctountant_GetAround myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Acctountant_GetAround>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Acctountant_GetAround\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询附近会计  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Order_Create.commandType :
+        {
+            CSPkgTypes.CS_Order_Create myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Order_Create>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Order_Create\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  创建订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Express_GetAll.commandType :
+        {
+            CSPkgTypes.CS_Express_GetAll myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Express_GetAll>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Express_GetAll\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询全部快递服务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_UncompletedOrder_GetList.commandType :
+        {
+            CSPkgTypes.CS_UncompletedOrder_GetList myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_UncompletedOrder_GetList>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_UncompletedOrder_GetList\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询未完成订单列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Order_GetDetails.commandType :
+        {
+            CSPkgTypes.CS_Order_GetDetails myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Order_GetDetails>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Order_GetDetails\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询订单明细  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Order_UpdateTotal.commandType :
+        {
+            CSPkgTypes.CS_Order_UpdateTotal myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Order_UpdateTotal>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Order_UpdateTotal\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计修改订单价格  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_Order_Confirm.commandType :
+        {
+            CSPkgTypes.CS_Customer_Order_Confirm myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_Order_Confirm>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_Order_Confirm\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户确认订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Get_Payment_Platform.commandType :
+        {
+            CSPkgTypes.CS_Get_Payment_Platform myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Get_Payment_Platform>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Get_Payment_Platform\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取支付平台列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_Deliver.commandType :
+        {
+            CSPkgTypes.CS_Customer_Deliver myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_Deliver>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_Deliver\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户寄送资料  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Accountant_Receipt_Confirm.commandType :
+        {
+            CSPkgTypes.CS_Accountant_Receipt_Confirm myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Accountant_Receipt_Confirm>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Accountant_Receipt_Confirm\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计接收资料确认  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Accountant_Create_Report.commandType :
+        {
+            CSPkgTypes.CS_Accountant_Create_Report myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Accountant_Create_Report>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Accountant_Create_Report\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计填写报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Get_Report_Month.commandType :
+        {
+            CSPkgTypes.CS_Get_Report_Month myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Get_Report_Month>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Get_Report_Month\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询月度报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Get_Report_Quarter.commandType :
+        {
+            CSPkgTypes.CS_Get_Report_Quarter myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Get_Report_Quarter>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Get_Report_Quarter\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询季度报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_Report_Confirm.commandType :
+        {
+            CSPkgTypes.CS_Customer_Report_Confirm myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_Report_Confirm>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_Report_Confirm\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户对报表审核  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Accountant_Send_Back.commandType :
+        {
+            CSPkgTypes.CS_Accountant_Send_Back myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Accountant_Send_Back>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Accountant_Send_Back\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计返还资料  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_Order_Recive.commandType :
+        {
+            CSPkgTypes.CS_Customer_Order_Recive myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_Order_Recive>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_Order_Recive\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户接收确认，订单完成  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_Order_Back.commandType :
+        {
+            CSPkgTypes.CS_Customer_Order_Back myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_Order_Back>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_Order_Back\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户退回订单至会计定价  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Accountant_Cancel_Order.commandType :
+        {
+            CSPkgTypes.CS_Accountant_Cancel_Order myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Accountant_Cancel_Order>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Accountant_Cancel_Order\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计取消订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_Cancel_Order.commandType :
+        {
+            CSPkgTypes.CS_Customer_Cancel_Order myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_Cancel_Order>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_Cancel_Order\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户取消订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Accountant_GetListSortData.commandType :
+        {
+            CSPkgTypes.CS_Accountant_GetListSortData myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Accountant_GetListSortData>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Accountant_GetListSortData\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Accountant_GetListScreenData.commandType :
+        {
+            CSPkgTypes.CS_Accountant_GetListScreenData myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Accountant_GetListScreenData>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Accountant_GetListScreenData\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Accountant_GetList.commandType :
+        {
+            CSPkgTypes.CS_Accountant_GetList myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Accountant_GetList>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Accountant_GetList\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_CompeletedOrder_GetList.commandType :
+        {
+            CSPkgTypes.CS_CompeletedOrder_GetList myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_CompeletedOrder_GetList>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_CompeletedOrder_GetList\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询已完成订单列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Grade_AccountantService.commandType :
+        {
+            CSPkgTypes.CS_Grade_AccountantService myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Grade_AccountantService>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Grade_AccountantService\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户对会计服务评分  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_AccountantCredentials_Upload.commandType :
+        {
+            CSPkgTypes.CS_AccountantCredentials_Upload myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_AccountantCredentials_Upload>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_AccountantCredentials_Upload\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计上传证件照片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_UnionPayTn_Get.commandType :
+        {
+            CSPkgTypes.CS_UnionPayTn_Get myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_UnionPayTn_Get>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_UnionPayTn_Get\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  银联支付获取交易流水号  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Upload.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Upload myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Upload>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Upload\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计上传报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Download.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Download myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Download>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Download\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Delete.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Delete myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Delete>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Delete\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  删除报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_GetAccountantUncompletedOrderList_web.commandType :
+        {
+            CSPkgTypes.CS_GetAccountantUncompletedOrderList_web myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_GetAccountantUncompletedOrderList_web>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_GetAccountantUncompletedOrderList_web\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取某会计未完成订单列表(web版)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_AccountantElectronicBusinessCard_Get.commandType :
+        {
+            CSPkgTypes.CS_AccountantElectronicBusinessCard_Get myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_AccountantElectronicBusinessCard_Get>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_AccountantElectronicBusinessCard_Get\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计电子名片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_AccountanPictureDown.commandType :
+        {
+            CSPkgTypes.CS_AccountanPictureDown myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_AccountanPictureDown>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_AccountanPictureDown\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载会计图片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_FindReportCustom.commandType :
+        {
+            CSPkgTypes.CS_FindReportCustom myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_FindReportCustom>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_FindReportCustom\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  通过公司和年月查找报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_Customer_UploadElectronicBill.commandType :
+        {
+            CSPkgTypes.CS_Customer_UploadElectronicBill myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_Customer_UploadElectronicBill>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_Customer_UploadElectronicBill\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司上传电子财务信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_GetElectronicBill.commandType :
+        {
+            CSPkgTypes.CS_GetElectronicBill myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_GetElectronicBill>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_GetElectronicBill\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获得公司电子财务信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_CustomerGetOrderState.commandType :
+        {
+            CSPkgTypes.CS_CustomerGetOrderState myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_CustomerGetOrderState>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_CustomerGetOrderState\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司查询所有订单的进度  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Upload_Year.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Upload_Year myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Upload_Year>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Upload_Year\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  上传年度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Upload_Quarter.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Upload_Quarter myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Upload_Quarter>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Upload_Quarter\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  上传季度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Upload_Month.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Upload_Month myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Upload_Month>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Upload_Month\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  上传月度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Download_Year.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Download_Year myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Download_Year>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Download_Year\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载年度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Download_Quarter.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Download_Quarter myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Download_Quarter>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Download_Quarter\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载季度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Download_Month.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Download_Month myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Download_Month>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Download_Month\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载月度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFileList_Download.commandType :
+        {
+            CSPkgTypes.CS_ReportFileList_Download myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFileList_Download>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFileList_Download\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  获得订单下有哪些报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFileOrder_Download.commandType :
+        {
+            CSPkgTypes.CS_ReportFileOrder_Download myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFileOrder_Download>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFileOrder_Download\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载报表文件(订单流程内使用)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_CheckAccountantInformation.commandType :
+        {
+            CSPkgTypes.CS_CheckAccountantInformation myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_CheckAccountantInformation>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_CheckAccountantInformation\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  地图点击获得会计详细信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_CheckReportFileFromID.commandType :
+        {
+            CSPkgTypes.CS_CheckReportFileFromID myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_CheckReportFileFromID>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_CheckReportFileFromID\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  通过报表文件ID查看文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Find_Year.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Find_Year myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Find_Year>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Find_Year\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看年度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Find_Quarter.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Find_Quarter myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Find_Quarter>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Find_Quarter\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看季度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReportFile_Find_Month.commandType :
+        {
+            CSPkgTypes.CS_ReportFile_Find_Month myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReportFile_Find_Month>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReportFile_Find_Month\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看月度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_DealAccountantList.commandType :
+        {
+            CSPkgTypes.CS_DealAccountantList myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_DealAccountantList>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_DealAccountantList\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  交易过的会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ChangeAccountantInformation.commandType :
+        {
+            CSPkgTypes.CS_ChangeAccountantInformation myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ChangeAccountantInformation>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ChangeAccountantInformation\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  修改会计个人资料  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_ReturnAccountantInformation.commandType :
+        {
+            CSPkgTypes.CS_ReturnAccountantInformation myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_ReturnAccountantInformation>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_ReturnAccountantInformation\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计点击修改，获得自己的数据  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_AccountantHomePage.commandType :
+        {
+            CSPkgTypes.CS_AccountantHomePage myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_AccountantHomePage>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_AccountantHomePage\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计首页  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_CustomerAnonymous.commandType :
+        {
+            CSPkgTypes.CS_CustomerAnonymous myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_CustomerAnonymous>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_CustomerAnonymous\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司匿名登录  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_FindAccountantCredentials.commandType :
+        {
+            CSPkgTypes.CS_FindAccountantCredentials myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_FindAccountantCredentials>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_FindAccountantCredentials\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看会计证件照片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_AccountantFindCustomer.commandType :
+        {
+            CSPkgTypes.CS_AccountantFindCustomer myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_AccountantFindCustomer>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_AccountantFindCustomer\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看交易过的公司  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_AcountantFindCustomerDetail.commandType :
+        {
+            CSPkgTypes.CS_AcountantFindCustomerDetail myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_AcountantFindCustomerDetail>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_AcountantFindCustomerDetail\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看交易过的某个公司明细  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_UserChangeIcon.commandType :
+        {
+            CSPkgTypes.CS_UserChangeIcon myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_UserChangeIcon>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_UserChangeIcon\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  用户更换头像  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_CustomerHomePage.commandType :
+        {
+            CSPkgTypes.CS_CustomerHomePage myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_CustomerHomePage>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_CustomerHomePage\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司主页  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_FindPushMessage.commandType :
+        {
+            CSPkgTypes.CS_FindPushMessage myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_FindPushMessage>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_FindPushMessage\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看推送消息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case CSPkgTypes.CS_AccountantFindDocment.commandType :
+        {
+            CSPkgTypes.CS_AccountantFindDocment myItem = null;
+            try
+            {
+                myItem =  bb.Read<CSPkgTypes.CS_AccountantFindDocment>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("客服端发送类型为:");
+            sb.Append("CS_AccountantFindDocment\n");
+            sb.Append("客服端发送数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看文档  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    default:
+            sb.Append("no commandType"+ pkgId);
+        break;
+}
+ bb.offset = 0;
+ return sb.ToString();

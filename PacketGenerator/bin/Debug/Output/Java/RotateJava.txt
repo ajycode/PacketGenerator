@@ -1,0 +1,2615 @@
+﻿
+short cmdID = bb.ReadShort();
+switch( cmdID )
+{
+    case 1 :
+        {
+            SC_Accountant_Register_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Register_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 2 :
+        {
+            SC_Accountant_Register_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Register_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 3 :
+        {
+            SC_Account_Register_IsExists_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_Register_IsExists_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 4 :
+        {
+            SC_Account_Register_IsExists_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_Register_IsExists_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 5 :
+        {
+            SC_Account_Login_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_Login_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 6 :
+        {
+            SC_Account_Login_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_Login_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 7 :
+        {
+            SC_Account_GetProduct_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_GetProduct_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 8 :
+        {
+            SC_Account_GetProduct_Product myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_GetProduct_Product.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 9 :
+        {
+            SC_Account_GetProduct_Industry myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_GetProduct_Industry.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 10 :
+        {
+            SC_Account_GetProduct_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_GetProduct_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 11 :
+        {
+            SC_Product_Manage_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Product_Manage_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 12 :
+        {
+            SC_Product_Manage_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Product_Manage_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 13 :
+        {
+            SC_Account_GetDetails_ProductId myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_GetDetails_ProductId.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 14 :
+        {
+            SC_Account_GetDetails_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_GetDetails_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 15 :
+        {
+            SC_Account_GetDetails_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Account_GetDetails_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 16 :
+        {
+            SC_Customer_Register_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Register_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 17 :
+        {
+            SC_Customer_Register_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Register_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 18 :
+        {
+            SC_Customer_Register_IsExists_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Register_IsExists_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 19 :
+        {
+            SC_Customer_Register_IsExists_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Register_IsExists_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 20 :
+        {
+            SC_Industry_AllSector_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Industry_AllSector_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 21 :
+        {
+            SC_Industry_AllSector_Industry myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Industry_AllSector_Industry.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 22 :
+        {
+            SC_Industry_AllSector_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Industry_AllSector_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 23 :
+        {
+            SC_Customer_Login_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Login_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 24 :
+        {
+            SC_Customer_Login_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Login_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 25 :
+        {
+            SC_Acctountant_GetAround_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Acctountant_GetAround_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 26 :
+        {
+            SC_Acctountant_GetAround_Person myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Acctountant_GetAround_Person.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 27 :
+        {
+            SC_Acctountant_GetAround_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Acctountant_GetAround_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 28 :
+        {
+            SC_Order_Create_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Order_Create_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 29 :
+        {
+            SC_Order_Create_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Order_Create_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 30 :
+        {
+            SC_Express_GetAll_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Express_GetAll_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 31 :
+        {
+            SC_Express_GetAll_Date myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Express_GetAll_Date.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 32 :
+        {
+            SC_Express_GetAll_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Express_GetAll_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 33 :
+        {
+            SC_UncompletedOrder_GetList_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_UncompletedOrder_GetList_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 34 :
+        {
+            SC_UncompletedOrder_GetList_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_UncompletedOrder_GetList_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 35 :
+        {
+            SC_UncompletedOrder_GetList_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_UncompletedOrder_GetList_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 36 :
+        {
+            SC_Order_GetDetails_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Order_GetDetails_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 37 :
+        {
+            SC_Order_GetDetails_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Order_GetDetails_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 38 :
+        {
+            SC_Order_UpdateTotal_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Order_UpdateTotal_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 39 :
+        {
+            SC_Order_UpdateTotal_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Order_UpdateTotal_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 40 :
+        {
+            SC_Customer_Order_Confirm_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Order_Confirm_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 41 :
+        {
+            SC_Customer_Order_Confirm_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Order_Confirm_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 42 :
+        {
+            SC_Get_Payment_Platform_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Get_Payment_Platform_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 43 :
+        {
+            SC_Get_Payment_Platform_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Get_Payment_Platform_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 44 :
+        {
+            SC_Get_Payment_Platform_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Get_Payment_Platform_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 45 :
+        {
+            SC_Customer_Deliver_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Deliver_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 46 :
+        {
+            SC_Customer_Deliver_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Deliver_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 47 :
+        {
+            SC_Accountant_Receipt_Confirm_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Receipt_Confirm_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 48 :
+        {
+            SC_Accountant_Receipt_Confirm_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Receipt_Confirm_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 49 :
+        {
+            SC_Accountant_Create_Report_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Create_Report_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 50 :
+        {
+            SC_Accountant_Create_Report_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Create_Report_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 51 :
+        {
+            SC_Get_Report_Month_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Get_Report_Month_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 52 :
+        {
+            SC_Get_Report_Month_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Get_Report_Month_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 53 :
+        {
+            SC_Get_Report_Quarter_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Get_Report_Quarter_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 54 :
+        {
+            SC_Get_Report_Quarter_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Get_Report_Quarter_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 55 :
+        {
+            SC_Customer_Report_Confirm_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Report_Confirm_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 56 :
+        {
+            SC_Customer_Report_Confirm_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Report_Confirm_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 57 :
+        {
+            SC_Accountant_Send_Back_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Send_Back_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 58 :
+        {
+            SC_Accountant_Send_Back_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Send_Back_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 59 :
+        {
+            SC_Customer_Order_Recive_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Order_Recive_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 60 :
+        {
+            SC_Customer_Order_Recive_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Order_Recive_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 61 :
+        {
+            SC_Customer_Order_Back_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Order_Back_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 62 :
+        {
+            SC_Customer_Order_Back_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Order_Back_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 63 :
+        {
+            SC_Accountant_Cancel_Order_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Cancel_Order_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 64 :
+        {
+            SC_Accountant_Cancel_Order_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_Cancel_Order_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 65 :
+        {
+            SC_Customer_Cancel_Order_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Cancel_Order_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 66 :
+        {
+            SC_Customer_Cancel_Order_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_Cancel_Order_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 67 :
+        {
+            SC_Accountant_GetList_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_GetList_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 68 :
+        {
+            SC_Accountant_GetList_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_GetList_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 69 :
+        {
+            SC_Accountant_GetList_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Accountant_GetList_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 70 :
+        {
+            SC_CompeletedOrder_GetList_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CompeletedOrder_GetList_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 71 :
+        {
+            SC_CompeletedOrder_GetList_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CompeletedOrder_GetList_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 72 :
+        {
+            SC_CompeletedOrder_GetList_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CompeletedOrder_GetList_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 73 :
+        {
+            SC_Grade_AccountantService_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Grade_AccountantService_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 74 :
+        {
+            SC_Grade_AccountantService_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Grade_AccountantService_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 75 :
+        {
+            SC_AccountantCredentials_Upload_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantCredentials_Upload_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 76 :
+        {
+            SC_AccountantCredentials_Upload_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantCredentials_Upload_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 77 :
+        {
+            SC_UnionPayTn_Get_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_UnionPayTn_Get_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 78 :
+        {
+            SC_UnionPayTn_Get_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_UnionPayTn_Get_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 79 :
+        {
+            SC_ReportFile_Upload_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Upload_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 80 :
+        {
+            SC_ReportFile_Upload_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Upload_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 81 :
+        {
+            SC_ReportFile_Download_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Download_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 82 :
+        {
+            SC_ReportFile_Download_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Download_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 83 :
+        {
+            SC_ReportFile_Delete_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Delete_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 84 :
+        {
+            SC_ReportFile_Delete_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Delete_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 85 :
+        {
+            SC_GetAccountantUncompletedOrderList_web_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_GetAccountantUncompletedOrderList_web_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 86 :
+        {
+            SC_GetAccountantUncompletedOrderList_web_file_info myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_GetAccountantUncompletedOrderList_web_file_info.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 87 :
+        {
+            SC_GetAccountantUncompletedOrderList_web_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_GetAccountantUncompletedOrderList_web_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 88 :
+        {
+            SC_GetAccountantUncompletedOrderList_web_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_GetAccountantUncompletedOrderList_web_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 89 :
+        {
+            SC_AccountantElectronicBusinessCard_Get_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantElectronicBusinessCard_Get_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 90 :
+        {
+            SC_AccountantElectronicBusinessCard_Get_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantElectronicBusinessCard_Get_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 91 :
+        {
+            SC_Communication_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Communication_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 92 :
+        {
+            SC_AccountanPictureDown_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountanPictureDown_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 93 :
+        {
+            SC_AccountanPictureDown_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountanPictureDown_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 94 :
+        {
+            SC_AccountanPictureDown_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountanPictureDown_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 95 :
+        {
+            SC_FindReportCustom_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_FindReportCustom_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 96 :
+        {
+            SC_FindReportCustom_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_FindReportCustom_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 97 :
+        {
+            SC_FindReportCustom_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_FindReportCustom_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 98 :
+        {
+            SC_Customer_UploadElectronicBill_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_UploadElectronicBill_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 99 :
+        {
+            SC_Customer_UploadElectronicBill_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Customer_UploadElectronicBill_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 100 :
+        {
+            SC_GetElectronicBill_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_GetElectronicBill_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 101 :
+        {
+            SC_GetElectronicBill_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_GetElectronicBill_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 102 :
+        {
+            SC_GetElectronicBill_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_GetElectronicBill_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 103 :
+        {
+            SC_CustomerGetOrderState_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CustomerGetOrderState_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 104 :
+        {
+            SC_CustomerGetOrderState_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CustomerGetOrderState_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 105 :
+        {
+            SC_CustomerGetOrderState_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CustomerGetOrderState_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 106 :
+        {
+            SC_ReportFile_Upload_Year_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Upload_Year_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 107 :
+        {
+            SC_ReportFile_Upload_Year_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Upload_Year_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 108 :
+        {
+            SC_ReportFile_Upload_Quarter_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Upload_Quarter_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 109 :
+        {
+            SC_ReportFile_Upload_Quarter_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Upload_Quarter_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 110 :
+        {
+            SC_ReportFile_Upload_Month_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Upload_Month_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 111 :
+        {
+            SC_ReportFile_Upload_Month_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Upload_Month_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 112 :
+        {
+            SC_ReportFile_Download_Year_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Download_Year_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 113 :
+        {
+            SC_ReportFile_Download_Year_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Download_Year_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 114 :
+        {
+            SC_ReportFile_Download_Quarter_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Download_Quarter_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 115 :
+        {
+            SC_ReportFile_Download_Quarter_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Download_Quarter_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 116 :
+        {
+            SC_ReportFile_Download_Month_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Download_Month_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 117 :
+        {
+            SC_ReportFile_Download_Month_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Download_Month_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 118 :
+        {
+            SC_ReportFileList_Download_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFileList_Download_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 119 :
+        {
+            SC_ReportFileList_Download_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFileList_Download_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 120 :
+        {
+            SC_ReportFileList_Download_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFileList_Download_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 121 :
+        {
+            SC_ReportFileOrder_Download_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFileOrder_Download_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 122 :
+        {
+            SC_ReportFileOrder_Download_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFileOrder_Download_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 123 :
+        {
+            SC_CheckAccountantInformation_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CheckAccountantInformation_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 124 :
+        {
+            SC_CheckAccountantInformation_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CheckAccountantInformation_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 125 :
+        {
+            SC_CheckAccountantInformation_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CheckAccountantInformation_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 126 :
+        {
+            SC_CheckReportFileFromID_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CheckReportFileFromID_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 127 :
+        {
+            SC_CheckReportFileFromID_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CheckReportFileFromID_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 128 :
+        {
+            SC_ReportFile_Find_Year_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Find_Year_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 129 :
+        {
+            SC_ReportFile_Find_Year_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Find_Year_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 130 :
+        {
+            SC_ReportFile_Find_Quarter_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Find_Quarter_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 131 :
+        {
+            SC_ReportFile_Find_Quarter_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Find_Quarter_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 132 :
+        {
+            SC_ReportFile_Find_Month_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Find_Month_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 133 :
+        {
+            SC_ReportFile_Find_Month_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReportFile_Find_Month_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 134 :
+        {
+            SC_DealAccountantList_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_DealAccountantList_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 135 :
+        {
+            SC_DealAccountantList_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_DealAccountantList_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 136 :
+        {
+            SC_DealAccountantList_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_DealAccountantList_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 137 :
+        {
+            SC_ChangeAccountantInformation_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ChangeAccountantInformation_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 138 :
+        {
+            SC_ChangeAccountantInformation_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ChangeAccountantInformation_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 139 :
+        {
+            SC_ReturnAccountantInformation_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReturnAccountantInformation_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 140 :
+        {
+            SC_ReturnAccountantInformation_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_ReturnAccountantInformation_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 141 :
+        {
+            SC_AccountantHomePage_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantHomePage_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 142 :
+        {
+            SC_AccountantHomePage_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantHomePage_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 143 :
+        {
+            SC_CustomerAnonymous_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CustomerAnonymous_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 144 :
+        {
+            SC_CustomerAnonymous_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CustomerAnonymous_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 145 :
+        {
+            SC_Anonymous_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_Anonymous_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 146 :
+        {
+            SC_FindAccountantCredentials_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_FindAccountantCredentials_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 147 :
+        {
+            SC_FindAccountantCredentials_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_FindAccountantCredentials_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 148 :
+        {
+            SC_FindAccountantCredentials_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_FindAccountantCredentials_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 149 :
+        {
+            SC_AccountantFindCustomer_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantFindCustomer_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 150 :
+        {
+            SC_AccountantFindCustomer_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantFindCustomer_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 151 :
+        {
+            SC_AccountantFindCustomer_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantFindCustomer_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 152 :
+        {
+            SC_AcountantFindCustomerDetail_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AcountantFindCustomerDetail_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 153 :
+        {
+            SC_AcountantFindCustomerDetail_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AcountantFindCustomerDetail_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 154 :
+        {
+            SC_UserChangeIcon_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_UserChangeIcon_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 155 :
+        {
+            SC_UserChangeIcon_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_UserChangeIcon_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 156 :
+        {
+            SC_CustomerHomePage_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CustomerHomePage_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 157 :
+        {
+            SC_CustomerHomePage_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_CustomerHomePage_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 158 :
+        {
+            SC_FindPushMessage_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_FindPushMessage_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 159 :
+        {
+            SC_FindPushMessage_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_FindPushMessage_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 160 :
+        {
+            SC_FindPushMessage_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_FindPushMessage_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 161 :
+        {
+            SC_AccountantFindDocment_Success_Data myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantFindDocment_Success_Data.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 162 :
+        {
+            SC_AccountantFindDocment_Success myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantFindDocment_Success.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    case 163 :
+        {
+            SC_AccountantFindDocment_Failure myItem = null;
+            try
+            {
+                myItem = bb.ReadClass( SC_AccountantFindDocment_Failure.class );
+            }
+            catch
+            {
+                System.out.println( "ByteBuff Error" );
+            }
+
+            // code here
+
+            break;
+        }
+    default:
+        break;
+}

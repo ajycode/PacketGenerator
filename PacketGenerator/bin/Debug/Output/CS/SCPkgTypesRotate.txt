@@ -1,0 +1,3597 @@
+﻿
+var sb = new StringBuilder();
+short pkgId = bb.ReadShort();
+switch( pkgId )
+{
+    case SCPkgTypes.SC_Accountant_Register_Success.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Register_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Register_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Register_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计注册成功  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_Register_Failure.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Register_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Register_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Register_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计注册失败  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_Register_IsExists_Success.commandType :
+        {
+            SCPkgTypes.SC_Account_Register_IsExists_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_Register_IsExists_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_Register_IsExists_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  用户名检测  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_Register_IsExists_Failure.commandType :
+        {
+            SCPkgTypes.SC_Account_Register_IsExists_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_Register_IsExists_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_Register_IsExists_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  用户名检测  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_Login_Success.commandType :
+        {
+            SCPkgTypes.SC_Account_Login_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_Login_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_Login_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计登陆  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_Login_Failure.commandType :
+        {
+            SCPkgTypes.SC_Account_Login_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_Login_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_Login_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计登陆  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_GetProduct_Success.commandType :
+        {
+            SCPkgTypes.SC_Account_GetProduct_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_GetProduct_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_GetProduct_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计获取本人受理业务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_GetProduct_Product.commandType :
+        {
+            SCPkgTypes.SC_Account_GetProduct_Product myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_GetProduct_Product>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_GetProduct_Product\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计获取本人受理业务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_GetProduct_Industry.commandType :
+        {
+            SCPkgTypes.SC_Account_GetProduct_Industry myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_GetProduct_Industry>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_GetProduct_Industry\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计获取本人受理业务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_GetProduct_Failure.commandType :
+        {
+            SCPkgTypes.SC_Account_GetProduct_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_GetProduct_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_GetProduct_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计获取本人受理业务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Product_Manage_Success.commandType :
+        {
+            SCPkgTypes.SC_Product_Manage_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Product_Manage_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Product_Manage_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计更新或添加个人受理业务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Product_Manage_Failure.commandType :
+        {
+            SCPkgTypes.SC_Product_Manage_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Product_Manage_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Product_Manage_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计更新或添加个人受理业务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_GetDetails_ProductId.commandType :
+        {
+            SCPkgTypes.SC_Account_GetDetails_ProductId myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_GetDetails_ProductId>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_GetDetails_ProductId\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计主页个人信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_GetDetails_Success.commandType :
+        {
+            SCPkgTypes.SC_Account_GetDetails_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_GetDetails_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_GetDetails_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计主页个人信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Account_GetDetails_Failure.commandType :
+        {
+            SCPkgTypes.SC_Account_GetDetails_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Account_GetDetails_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Account_GetDetails_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计主页个人信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Register_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_Register_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Register_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Register_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司注册  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Register_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_Register_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Register_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Register_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司注册  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Register_IsExists_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_Register_IsExists_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Register_IsExists_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Register_IsExists_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司注册用户名检测  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Register_IsExists_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_Register_IsExists_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Register_IsExists_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Register_IsExists_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司注册用户名检测  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Industry_AllSector_Success.commandType :
+        {
+            SCPkgTypes.SC_Industry_AllSector_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Industry_AllSector_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Industry_AllSector_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取全部行业分类  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Industry_AllSector_Industry.commandType :
+        {
+            SCPkgTypes.SC_Industry_AllSector_Industry myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Industry_AllSector_Industry>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Industry_AllSector_Industry\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取全部行业分类  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Industry_AllSector_Failure.commandType :
+        {
+            SCPkgTypes.SC_Industry_AllSector_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Industry_AllSector_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Industry_AllSector_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取全部行业分类  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Login_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_Login_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Login_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Login_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司登陆  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Login_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_Login_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Login_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Login_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司登陆  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Acctountant_GetAround_Success.commandType :
+        {
+            SCPkgTypes.SC_Acctountant_GetAround_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Acctountant_GetAround_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Acctountant_GetAround_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询附近会计  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Acctountant_GetAround_Person.commandType :
+        {
+            SCPkgTypes.SC_Acctountant_GetAround_Person myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Acctountant_GetAround_Person>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Acctountant_GetAround_Person\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询附近会计  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Acctountant_GetAround_Failure.commandType :
+        {
+            SCPkgTypes.SC_Acctountant_GetAround_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Acctountant_GetAround_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Acctountant_GetAround_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询附近会计  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Order_Create_Success.commandType :
+        {
+            SCPkgTypes.SC_Order_Create_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Order_Create_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Order_Create_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  创建订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Order_Create_Failure.commandType :
+        {
+            SCPkgTypes.SC_Order_Create_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Order_Create_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Order_Create_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  创建订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Express_GetAll_Success.commandType :
+        {
+            SCPkgTypes.SC_Express_GetAll_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Express_GetAll_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Express_GetAll_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询全部快递服务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Express_GetAll_Date.commandType :
+        {
+            SCPkgTypes.SC_Express_GetAll_Date myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Express_GetAll_Date>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Express_GetAll_Date\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询全部快递服务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Express_GetAll_Failure.commandType :
+        {
+            SCPkgTypes.SC_Express_GetAll_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Express_GetAll_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Express_GetAll_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询全部快递服务  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_UncompletedOrder_GetList_Success.commandType :
+        {
+            SCPkgTypes.SC_UncompletedOrder_GetList_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_UncompletedOrder_GetList_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_UncompletedOrder_GetList_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询未完成订单列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_UncompletedOrder_GetList_Data.commandType :
+        {
+            SCPkgTypes.SC_UncompletedOrder_GetList_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_UncompletedOrder_GetList_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_UncompletedOrder_GetList_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询未完成订单列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_UncompletedOrder_GetList_Failure.commandType :
+        {
+            SCPkgTypes.SC_UncompletedOrder_GetList_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_UncompletedOrder_GetList_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_UncompletedOrder_GetList_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询未完成订单列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Order_GetDetails_Success.commandType :
+        {
+            SCPkgTypes.SC_Order_GetDetails_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Order_GetDetails_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Order_GetDetails_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询订单明细  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Order_GetDetails_Failure.commandType :
+        {
+            SCPkgTypes.SC_Order_GetDetails_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Order_GetDetails_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Order_GetDetails_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询订单明细  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Order_UpdateTotal_Success.commandType :
+        {
+            SCPkgTypes.SC_Order_UpdateTotal_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Order_UpdateTotal_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Order_UpdateTotal_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计修改订单价格  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Order_UpdateTotal_Failure.commandType :
+        {
+            SCPkgTypes.SC_Order_UpdateTotal_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Order_UpdateTotal_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Order_UpdateTotal_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计修改订单价格  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Order_Confirm_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_Order_Confirm_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Order_Confirm_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Order_Confirm_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户确认订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Order_Confirm_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_Order_Confirm_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Order_Confirm_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Order_Confirm_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户确认订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Get_Payment_Platform_Success.commandType :
+        {
+            SCPkgTypes.SC_Get_Payment_Platform_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Get_Payment_Platform_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Get_Payment_Platform_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取支付平台列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Get_Payment_Platform_Data.commandType :
+        {
+            SCPkgTypes.SC_Get_Payment_Platform_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Get_Payment_Platform_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Get_Payment_Platform_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取支付平台列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Get_Payment_Platform_Failure.commandType :
+        {
+            SCPkgTypes.SC_Get_Payment_Platform_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Get_Payment_Platform_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Get_Payment_Platform_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取支付平台列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Deliver_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_Deliver_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Deliver_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Deliver_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户寄送资料  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Deliver_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_Deliver_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Deliver_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Deliver_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户寄送资料  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_Receipt_Confirm_Success.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Receipt_Confirm_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Receipt_Confirm_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Receipt_Confirm_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计接收资料确认  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_Receipt_Confirm_Failure.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Receipt_Confirm_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Receipt_Confirm_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Receipt_Confirm_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计接收资料确认  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_Create_Report_Success.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Create_Report_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Create_Report_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Create_Report_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计填写报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_Create_Report_Failure.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Create_Report_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Create_Report_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Create_Report_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计填写报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Get_Report_Month_Success.commandType :
+        {
+            SCPkgTypes.SC_Get_Report_Month_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Get_Report_Month_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Get_Report_Month_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询月度报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Get_Report_Month_Failure.commandType :
+        {
+            SCPkgTypes.SC_Get_Report_Month_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Get_Report_Month_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Get_Report_Month_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询月度报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Get_Report_Quarter_Success.commandType :
+        {
+            SCPkgTypes.SC_Get_Report_Quarter_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Get_Report_Quarter_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Get_Report_Quarter_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询季度报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Get_Report_Quarter_Failure.commandType :
+        {
+            SCPkgTypes.SC_Get_Report_Quarter_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Get_Report_Quarter_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Get_Report_Quarter_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询季度报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Report_Confirm_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_Report_Confirm_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Report_Confirm_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Report_Confirm_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户对报表审核  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Report_Confirm_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_Report_Confirm_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Report_Confirm_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Report_Confirm_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户对报表审核  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_Send_Back_Success.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Send_Back_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Send_Back_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Send_Back_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计返还资料  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_Send_Back_Failure.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Send_Back_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Send_Back_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Send_Back_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计返还资料  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Order_Recive_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_Order_Recive_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Order_Recive_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Order_Recive_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户接收确认，订单完成  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Order_Recive_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_Order_Recive_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Order_Recive_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Order_Recive_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户接收确认，订单完成  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Order_Back_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_Order_Back_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Order_Back_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Order_Back_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户退回订单至会计定价  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Order_Back_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_Order_Back_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Order_Back_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Order_Back_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户退回订单至会计定价  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_Cancel_Order_Success.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Cancel_Order_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Cancel_Order_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Cancel_Order_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计取消订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_Cancel_Order_Failure.commandType :
+        {
+            SCPkgTypes.SC_Accountant_Cancel_Order_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_Cancel_Order_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_Cancel_Order_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计取消订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Cancel_Order_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_Cancel_Order_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Cancel_Order_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Cancel_Order_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户取消订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_Cancel_Order_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_Cancel_Order_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_Cancel_Order_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_Cancel_Order_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户取消订单  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_GetList_Success.commandType :
+        {
+            SCPkgTypes.SC_Accountant_GetList_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_GetList_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_GetList_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_GetList_Data.commandType :
+        {
+            SCPkgTypes.SC_Accountant_GetList_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_GetList_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_GetList_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Accountant_GetList_Failure.commandType :
+        {
+            SCPkgTypes.SC_Accountant_GetList_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Accountant_GetList_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Accountant_GetList_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CompeletedOrder_GetList_Success.commandType :
+        {
+            SCPkgTypes.SC_CompeletedOrder_GetList_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CompeletedOrder_GetList_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CompeletedOrder_GetList_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询已完成订单列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CompeletedOrder_GetList_Data.commandType :
+        {
+            SCPkgTypes.SC_CompeletedOrder_GetList_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CompeletedOrder_GetList_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CompeletedOrder_GetList_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询已完成订单列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CompeletedOrder_GetList_Failure.commandType :
+        {
+            SCPkgTypes.SC_CompeletedOrder_GetList_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CompeletedOrder_GetList_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CompeletedOrder_GetList_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查询已完成订单列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Grade_AccountantService_Success.commandType :
+        {
+            SCPkgTypes.SC_Grade_AccountantService_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Grade_AccountantService_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Grade_AccountantService_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户对会计服务评分  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Grade_AccountantService_Failure.commandType :
+        {
+            SCPkgTypes.SC_Grade_AccountantService_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Grade_AccountantService_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Grade_AccountantService_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  客户对会计服务评分  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantCredentials_Upload_Success.commandType :
+        {
+            SCPkgTypes.SC_AccountantCredentials_Upload_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantCredentials_Upload_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantCredentials_Upload_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计上传证件照片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantCredentials_Upload_Failure.commandType :
+        {
+            SCPkgTypes.SC_AccountantCredentials_Upload_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantCredentials_Upload_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantCredentials_Upload_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计上传证件照片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_UnionPayTn_Get_Success.commandType :
+        {
+            SCPkgTypes.SC_UnionPayTn_Get_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_UnionPayTn_Get_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_UnionPayTn_Get_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  银联支付获取交易流水号  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_UnionPayTn_Get_Failure.commandType :
+        {
+            SCPkgTypes.SC_UnionPayTn_Get_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_UnionPayTn_Get_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_UnionPayTn_Get_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  银联支付获取交易流水号  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Upload_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Upload_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Upload_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Upload_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计上传报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Upload_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Upload_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Upload_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Upload_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计上传报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Download_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Download_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Download_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Download_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Download_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Download_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Download_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Download_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Delete_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Delete_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Delete_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Delete_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  删除报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Delete_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Delete_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Delete_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Delete_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  删除报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_Success.commandType :
+        {
+            SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_GetAccountantUncompletedOrderList_web_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取某会计未完成订单列表(web版)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_file_info.commandType :
+        {
+            SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_file_info myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_file_info>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_GetAccountantUncompletedOrderList_web_file_info\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取某会计未完成订单列表(web版)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_Data.commandType :
+        {
+            SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_GetAccountantUncompletedOrderList_web_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取某会计未完成订单列表(web版)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_Failure.commandType :
+        {
+            SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_GetAccountantUncompletedOrderList_web_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_GetAccountantUncompletedOrderList_web_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取某会计未完成订单列表(web版)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantElectronicBusinessCard_Get_Success.commandType :
+        {
+            SCPkgTypes.SC_AccountantElectronicBusinessCard_Get_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantElectronicBusinessCard_Get_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantElectronicBusinessCard_Get_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计电子名片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantElectronicBusinessCard_Get_Failure.commandType :
+        {
+            SCPkgTypes.SC_AccountantElectronicBusinessCard_Get_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantElectronicBusinessCard_Get_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantElectronicBusinessCard_Get_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获取会计电子名片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Communication_Failure.commandType :
+        {
+            SCPkgTypes.SC_Communication_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Communication_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Communication_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  通信错误  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountanPictureDown_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_AccountanPictureDown_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountanPictureDown_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountanPictureDown_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载会计图片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountanPictureDown_Success.commandType :
+        {
+            SCPkgTypes.SC_AccountanPictureDown_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountanPictureDown_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountanPictureDown_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载会计图片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountanPictureDown_Failure.commandType :
+        {
+            SCPkgTypes.SC_AccountanPictureDown_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountanPictureDown_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountanPictureDown_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载会计图片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_FindReportCustom_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_FindReportCustom_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_FindReportCustom_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_FindReportCustom_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司查询月度报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_FindReportCustom_Success.commandType :
+        {
+            SCPkgTypes.SC_FindReportCustom_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_FindReportCustom_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_FindReportCustom_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司查询月度报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_FindReportCustom_Failure.commandType :
+        {
+            SCPkgTypes.SC_FindReportCustom_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_FindReportCustom_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_FindReportCustom_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司查询月度报表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_UploadElectronicBill_Success.commandType :
+        {
+            SCPkgTypes.SC_Customer_UploadElectronicBill_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_UploadElectronicBill_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_UploadElectronicBill_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司上传电子财务信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Customer_UploadElectronicBill_Failure.commandType :
+        {
+            SCPkgTypes.SC_Customer_UploadElectronicBill_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Customer_UploadElectronicBill_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Customer_UploadElectronicBill_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司上传电子财务信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_GetElectronicBill_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_GetElectronicBill_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_GetElectronicBill_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_GetElectronicBill_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获得公司电子财务信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_GetElectronicBill_Success.commandType :
+        {
+            SCPkgTypes.SC_GetElectronicBill_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_GetElectronicBill_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_GetElectronicBill_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获得公司电子财务信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_GetElectronicBill_Failure.commandType :
+        {
+            SCPkgTypes.SC_GetElectronicBill_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_GetElectronicBill_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_GetElectronicBill_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  获得公司电子财务信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CustomerGetOrderState_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_CustomerGetOrderState_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CustomerGetOrderState_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CustomerGetOrderState_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司查询所有订单的进度  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CustomerGetOrderState_Success.commandType :
+        {
+            SCPkgTypes.SC_CustomerGetOrderState_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CustomerGetOrderState_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CustomerGetOrderState_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司查询所有订单的进度  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CustomerGetOrderState_Failure.commandType :
+        {
+            SCPkgTypes.SC_CustomerGetOrderState_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CustomerGetOrderState_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CustomerGetOrderState_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司查询所有订单的进度  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Upload_Year_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Upload_Year_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Upload_Year_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Upload_Year_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  上传年度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Upload_Year_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Upload_Year_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Upload_Year_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Upload_Year_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  上传年度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Upload_Quarter_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Upload_Quarter_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Upload_Quarter_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Upload_Quarter_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  上传季度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Upload_Quarter_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Upload_Quarter_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Upload_Quarter_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Upload_Quarter_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  上传季度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Upload_Month_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Upload_Month_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Upload_Month_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Upload_Month_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  上传月度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Upload_Month_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Upload_Month_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Upload_Month_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Upload_Month_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  上传月度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Download_Year_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Download_Year_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Download_Year_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Download_Year_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载年度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Download_Year_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Download_Year_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Download_Year_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Download_Year_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载年度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Download_Quarter_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Download_Quarter_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Download_Quarter_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Download_Quarter_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载季度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Download_Quarter_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Download_Quarter_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Download_Quarter_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Download_Quarter_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载季度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Download_Month_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Download_Month_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Download_Month_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Download_Month_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载月度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Download_Month_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Download_Month_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Download_Month_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Download_Month_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载月度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFileList_Download_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_ReportFileList_Download_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFileList_Download_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFileList_Download_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载报表文件列表(订单流程内使用)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFileList_Download_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFileList_Download_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFileList_Download_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFileList_Download_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载报表文件列表(订单流程内使用)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFileList_Download_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFileList_Download_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFileList_Download_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFileList_Download_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载报表文件列表(订单流程内使用)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFileOrder_Download_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFileOrder_Download_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFileOrder_Download_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFileOrder_Download_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载报表文件(订单流程内使用)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFileOrder_Download_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFileOrder_Download_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFileOrder_Download_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFileOrder_Download_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  下载报表文件(订单流程内使用)  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CheckAccountantInformation_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_CheckAccountantInformation_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CheckAccountantInformation_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CheckAccountantInformation_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  地图点击获得会计详细信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CheckAccountantInformation_Success.commandType :
+        {
+            SCPkgTypes.SC_CheckAccountantInformation_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CheckAccountantInformation_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CheckAccountantInformation_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  地图点击获得会计详细信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CheckAccountantInformation_Failure.commandType :
+        {
+            SCPkgTypes.SC_CheckAccountantInformation_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CheckAccountantInformation_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CheckAccountantInformation_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  地图点击获得会计详细信息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CheckReportFileFromID_Success.commandType :
+        {
+            SCPkgTypes.SC_CheckReportFileFromID_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CheckReportFileFromID_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CheckReportFileFromID_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  通过报表文件ID查看文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CheckReportFileFromID_Failure.commandType :
+        {
+            SCPkgTypes.SC_CheckReportFileFromID_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CheckReportFileFromID_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CheckReportFileFromID_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  通过报表文件ID查看文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Find_Year_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Find_Year_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Find_Year_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Find_Year_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看年度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Find_Year_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Find_Year_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Find_Year_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Find_Year_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看年度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Find_Quarter_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Find_Quarter_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Find_Quarter_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Find_Quarter_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看季度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Find_Quarter_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Find_Quarter_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Find_Quarter_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Find_Quarter_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看季度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Find_Month_Success.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Find_Month_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Find_Month_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Find_Month_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看月度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReportFile_Find_Month_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReportFile_Find_Month_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReportFile_Find_Month_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReportFile_Find_Month_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看月度报表文件  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_DealAccountantList_Success.commandType :
+        {
+            SCPkgTypes.SC_DealAccountantList_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_DealAccountantList_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_DealAccountantList_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  交易过的会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_DealAccountantList_Data.commandType :
+        {
+            SCPkgTypes.SC_DealAccountantList_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_DealAccountantList_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_DealAccountantList_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  交易过的会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_DealAccountantList_Failure.commandType :
+        {
+            SCPkgTypes.SC_DealAccountantList_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_DealAccountantList_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_DealAccountantList_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  交易过的会计列表  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ChangeAccountantInformation_Success.commandType :
+        {
+            SCPkgTypes.SC_ChangeAccountantInformation_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ChangeAccountantInformation_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ChangeAccountantInformation_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  修改会计个人资料  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ChangeAccountantInformation_Failure.commandType :
+        {
+            SCPkgTypes.SC_ChangeAccountantInformation_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ChangeAccountantInformation_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ChangeAccountantInformation_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  修改会计个人资料  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReturnAccountantInformation_Success.commandType :
+        {
+            SCPkgTypes.SC_ReturnAccountantInformation_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReturnAccountantInformation_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReturnAccountantInformation_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计点击修改，获得自己的数据  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_ReturnAccountantInformation_Failure.commandType :
+        {
+            SCPkgTypes.SC_ReturnAccountantInformation_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_ReturnAccountantInformation_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_ReturnAccountantInformation_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计点击修改，获得自己的数据  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantHomePage_Success.commandType :
+        {
+            SCPkgTypes.SC_AccountantHomePage_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantHomePage_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantHomePage_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计首页  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantHomePage_Failure.commandType :
+        {
+            SCPkgTypes.SC_AccountantHomePage_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantHomePage_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantHomePage_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计首页  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CustomerAnonymous_Success.commandType :
+        {
+            SCPkgTypes.SC_CustomerAnonymous_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CustomerAnonymous_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CustomerAnonymous_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司匿名登录  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CustomerAnonymous_Failure.commandType :
+        {
+            SCPkgTypes.SC_CustomerAnonymous_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CustomerAnonymous_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CustomerAnonymous_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司匿名登录  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_Anonymous_Failure.commandType :
+        {
+            SCPkgTypes.SC_Anonymous_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_Anonymous_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_Anonymous_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  验证服务器失败  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_FindAccountantCredentials_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_FindAccountantCredentials_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_FindAccountantCredentials_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_FindAccountantCredentials_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看会计证件照片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_FindAccountantCredentials_Success.commandType :
+        {
+            SCPkgTypes.SC_FindAccountantCredentials_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_FindAccountantCredentials_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_FindAccountantCredentials_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看会计证件照片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_FindAccountantCredentials_Failure.commandType :
+        {
+            SCPkgTypes.SC_FindAccountantCredentials_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_FindAccountantCredentials_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_FindAccountantCredentials_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看会计证件照片  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantFindCustomer_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_AccountantFindCustomer_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantFindCustomer_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantFindCustomer_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看交易过的公司  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantFindCustomer_Success.commandType :
+        {
+            SCPkgTypes.SC_AccountantFindCustomer_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantFindCustomer_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantFindCustomer_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看交易过的公司  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantFindCustomer_Failure.commandType :
+        {
+            SCPkgTypes.SC_AccountantFindCustomer_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantFindCustomer_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantFindCustomer_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看交易过的公司  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AcountantFindCustomerDetail_Success.commandType :
+        {
+            SCPkgTypes.SC_AcountantFindCustomerDetail_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AcountantFindCustomerDetail_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AcountantFindCustomerDetail_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看交易过的某个公司明细  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AcountantFindCustomerDetail_Failure.commandType :
+        {
+            SCPkgTypes.SC_AcountantFindCustomerDetail_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AcountantFindCustomerDetail_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AcountantFindCustomerDetail_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看交易过的某个公司明细  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_UserChangeIcon_Success.commandType :
+        {
+            SCPkgTypes.SC_UserChangeIcon_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_UserChangeIcon_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_UserChangeIcon_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计更换头像  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_UserChangeIcon_Failure.commandType :
+        {
+            SCPkgTypes.SC_UserChangeIcon_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_UserChangeIcon_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_UserChangeIcon_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  更换头像  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CustomerHomePage_Success.commandType :
+        {
+            SCPkgTypes.SC_CustomerHomePage_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CustomerHomePage_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CustomerHomePage_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司主页  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_CustomerHomePage_Failure.commandType :
+        {
+            SCPkgTypes.SC_CustomerHomePage_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_CustomerHomePage_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_CustomerHomePage_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  公司主页  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_FindPushMessage_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_FindPushMessage_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_FindPushMessage_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_FindPushMessage_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看推送消息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_FindPushMessage_Success.commandType :
+        {
+            SCPkgTypes.SC_FindPushMessage_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_FindPushMessage_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_FindPushMessage_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看推送消息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_FindPushMessage_Failure.commandType :
+        {
+            SCPkgTypes.SC_FindPushMessage_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_FindPushMessage_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_FindPushMessage_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  查看推送消息  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantFindDocment_Success_Data.commandType :
+        {
+            SCPkgTypes.SC_AccountantFindDocment_Success_Data myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantFindDocment_Success_Data>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantFindDocment_Success_Data\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看文档  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantFindDocment_Success.commandType :
+        {
+            SCPkgTypes.SC_AccountantFindDocment_Success myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantFindDocment_Success>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantFindDocment_Success\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看文档  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    case SCPkgTypes.SC_AccountantFindDocment_Failure.commandType :
+        {
+            SCPkgTypes.SC_AccountantFindDocment_Failure myItem = null;
+            try
+            {
+                myItem =  bb.Read<SCPkgTypes.SC_AccountantFindDocment_Failure>();
+            }
+            catch
+            {
+                Console.Write( "ByteBuff Error" );
+            }
+            // code here
+            string endString = JsonConvert.SerializeObject(myItem);
+            sb.Append("服务器返回类型为:");
+            sb.Append("SC_AccountantFindDocment_Failure\n");
+            sb.Append("服务器返回数据为:");
+            sb.Append(endString);
+            sb.Append("(  会计查看文档  )");
+            sb.Append("\n");
+            break;
+         
+        }
+    default:
+            sb.Append("no commandType"+ pkgId);
+        break;
+}
+ bb.offset = 0;
+ return sb.ToString();

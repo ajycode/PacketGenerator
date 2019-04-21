@@ -1,0 +1,931 @@
+﻿
+short cmdID=-1; 
+bb.Read(cmdID);
+switch( cmdID )
+{
+    case 1 :
+        {
+            CSPkgTypes::CS_Accountant_Register myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 2 :
+        {
+            CSPkgTypes::CS_Account_Register_IsExists myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 3 :
+        {
+            CSPkgTypes::CS_Account_Login myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 4 :
+        {
+            CSPkgTypes::CS_Account_GetProduct myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 5 :
+        {
+            CSPkgTypes::CS_Product_Manage myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 6 :
+        {
+            CSPkgTypes::CS_Account_GetDetails myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 7 :
+        {
+            CSPkgTypes::CS_Customer_Register myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 8 :
+        {
+            CSPkgTypes::CS_Customer_Register_IsExists myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 9 :
+        {
+            CSPkgTypes::CS_Industry_AllSector myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 10 :
+        {
+            CSPkgTypes::CS_Customer_Login myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 11 :
+        {
+            CSPkgTypes::CS_Acctountant_GetAround myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 12 :
+        {
+            CSPkgTypes::CS_Order_Create myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 13 :
+        {
+            CSPkgTypes::CS_Express_GetAll myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 14 :
+        {
+            CSPkgTypes::CS_UncompletedOrder_GetList myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 15 :
+        {
+            CSPkgTypes::CS_Order_GetDetails myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 16 :
+        {
+            CSPkgTypes::CS_Order_UpdateTotal myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 17 :
+        {
+            CSPkgTypes::CS_Customer_Order_Confirm myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 18 :
+        {
+            CSPkgTypes::CS_Get_Payment_Platform myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 19 :
+        {
+            CSPkgTypes::CS_Customer_Deliver myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 20 :
+        {
+            CSPkgTypes::CS_Accountant_Receipt_Confirm myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 21 :
+        {
+            CSPkgTypes::CS_Accountant_Create_Report myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 22 :
+        {
+            CSPkgTypes::CS_Get_Report_Month myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 23 :
+        {
+            CSPkgTypes::CS_Get_Report_Quarter myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 24 :
+        {
+            CSPkgTypes::CS_Customer_Report_Confirm myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 25 :
+        {
+            CSPkgTypes::CS_Accountant_Send_Back myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 26 :
+        {
+            CSPkgTypes::CS_Customer_Order_Recive myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 27 :
+        {
+            CSPkgTypes::CS_Customer_Order_Back myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 28 :
+        {
+            CSPkgTypes::CS_Accountant_Cancel_Order myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 29 :
+        {
+            CSPkgTypes::CS_Customer_Cancel_Order myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 30 :
+        {
+            CSPkgTypes::CS_Accountant_GetListSortData myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 31 :
+        {
+            CSPkgTypes::CS_Accountant_GetListScreenData myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 32 :
+        {
+            CSPkgTypes::CS_Accountant_GetList myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 33 :
+        {
+            CSPkgTypes::CS_CompeletedOrder_GetList myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 34 :
+        {
+            CSPkgTypes::CS_Grade_AccountantService myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 35 :
+        {
+            CSPkgTypes::CS_AccountantCredentials_Upload myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 36 :
+        {
+            CSPkgTypes::CS_UnionPayTn_Get myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 37 :
+        {
+            CSPkgTypes::CS_ReportFile_Upload myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 38 :
+        {
+            CSPkgTypes::CS_ReportFile_Download myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 39 :
+        {
+            CSPkgTypes::CS_ReportFile_Delete myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 40 :
+        {
+            CSPkgTypes::CS_GetAccountantUncompletedOrderList_web myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 41 :
+        {
+            CSPkgTypes::CS_AccountantElectronicBusinessCard_Get myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 42 :
+        {
+            CSPkgTypes::CS_AccountanPictureDown myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 43 :
+        {
+            CSPkgTypes::CS_FindReportCustom myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 44 :
+        {
+            CSPkgTypes::CS_Customer_UploadElectronicBill myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 45 :
+        {
+            CSPkgTypes::CS_GetElectronicBill myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 46 :
+        {
+            CSPkgTypes::CS_CustomerGetOrderState myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 47 :
+        {
+            CSPkgTypes::CS_ReportFile_Upload_Year myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 48 :
+        {
+            CSPkgTypes::CS_ReportFile_Upload_Quarter myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 49 :
+        {
+            CSPkgTypes::CS_ReportFile_Upload_Month myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 50 :
+        {
+            CSPkgTypes::CS_ReportFile_Download_Year myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 51 :
+        {
+            CSPkgTypes::CS_ReportFile_Download_Quarter myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 52 :
+        {
+            CSPkgTypes::CS_ReportFile_Download_Month myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 53 :
+        {
+            CSPkgTypes::CS_ReportFileList_Download myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 54 :
+        {
+            CSPkgTypes::CS_ReportFileOrder_Download myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 55 :
+        {
+            CSPkgTypes::CS_CheckAccountantInformation myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 56 :
+        {
+            CSPkgTypes::CS_CheckReportFileFromID myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 57 :
+        {
+            CSPkgTypes::CS_ReportFile_Find_Year myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 58 :
+        {
+            CSPkgTypes::CS_ReportFile_Find_Quarter myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 59 :
+        {
+            CSPkgTypes::CS_ReportFile_Find_Month myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 60 :
+        {
+            CSPkgTypes::CS_DealAccountantList myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 61 :
+        {
+            CSPkgTypes::CS_ChangeAccountantInformation myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 62 :
+        {
+            CSPkgTypes::CS_ReturnAccountantInformation myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 63 :
+        {
+            CSPkgTypes::CS_AccountantHomePage myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 64 :
+        {
+            CSPkgTypes::CS_CustomerAnonymous myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 65 :
+        {
+            CSPkgTypes::CS_FindAccountantCredentials myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 66 :
+        {
+            CSPkgTypes::CS_AccountantFindCustomer myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 67 :
+        {
+            CSPkgTypes::CS_AcountantFindCustomerDetail myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 68 :
+        {
+            CSPkgTypes::CS_UserChangeIcon myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 69 :
+        {
+            CSPkgTypes::CS_CustomerHomePage myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 70 :
+        {
+            CSPkgTypes::CS_FindPushMessage myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 71 :
+        {
+            CSPkgTypes::CS_AccountantFindDocment myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    default:
+        break;
+}

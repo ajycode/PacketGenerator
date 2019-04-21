@@ -1,0 +1,7 @@
+E:\项目代码\会来\PkgGenerator\PacketTemplate_CS\bin\Release\PacketTemplate_CS.dll
+E:\项目代码\会来\PkgGenerator\PacketTemplate_CS\bin\Release\PacketTemplate_CS.pdb
+E:\项目代码\会来\PkgGenerator\PacketTemplate_CS\bin\Release\PacketLibrary.dll
+E:\项目代码\会来\PkgGenerator\PacketTemplate_CS\bin\Release\PacketLibrary.pdb
+E:\项目代码\会来\PkgGenerator\PacketTemplate_CS\obj\Release\PacketTemplate_CS.csprojResolveAssemblyReference.cache
+E:\项目代码\会来\PkgGenerator\PacketTemplate_CS\obj\Release\PacketTemplate_CS.dll
+E:\项目代码\会来\PkgGenerator\PacketTemplate_CS\obj\Release\PacketTemplate_CS.pdb

@@ -1,0 +1,2127 @@
+﻿
+short cmdID=-1; 
+bb.Read(cmdID);
+switch( cmdID )
+{
+    case 1 :
+        {
+            SCPkgTypes::SC_Accountant_Register_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 2 :
+        {
+            SCPkgTypes::SC_Accountant_Register_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 3 :
+        {
+            SCPkgTypes::SC_Account_Register_IsExists_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 4 :
+        {
+            SCPkgTypes::SC_Account_Register_IsExists_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 5 :
+        {
+            SCPkgTypes::SC_Account_Login_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 6 :
+        {
+            SCPkgTypes::SC_Account_Login_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 7 :
+        {
+            SCPkgTypes::SC_Account_GetProduct_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 8 :
+        {
+            SCPkgTypes::SC_Account_GetProduct_Product myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 9 :
+        {
+            SCPkgTypes::SC_Account_GetProduct_Industry myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 10 :
+        {
+            SCPkgTypes::SC_Account_GetProduct_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 11 :
+        {
+            SCPkgTypes::SC_Product_Manage_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 12 :
+        {
+            SCPkgTypes::SC_Product_Manage_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 13 :
+        {
+            SCPkgTypes::SC_Account_GetDetails_ProductId myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 14 :
+        {
+            SCPkgTypes::SC_Account_GetDetails_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 15 :
+        {
+            SCPkgTypes::SC_Account_GetDetails_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 16 :
+        {
+            SCPkgTypes::SC_Customer_Register_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 17 :
+        {
+            SCPkgTypes::SC_Customer_Register_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 18 :
+        {
+            SCPkgTypes::SC_Customer_Register_IsExists_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 19 :
+        {
+            SCPkgTypes::SC_Customer_Register_IsExists_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 20 :
+        {
+            SCPkgTypes::SC_Industry_AllSector_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 21 :
+        {
+            SCPkgTypes::SC_Industry_AllSector_Industry myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 22 :
+        {
+            SCPkgTypes::SC_Industry_AllSector_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 23 :
+        {
+            SCPkgTypes::SC_Customer_Login_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 24 :
+        {
+            SCPkgTypes::SC_Customer_Login_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 25 :
+        {
+            SCPkgTypes::SC_Acctountant_GetAround_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 26 :
+        {
+            SCPkgTypes::SC_Acctountant_GetAround_Person myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 27 :
+        {
+            SCPkgTypes::SC_Acctountant_GetAround_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 28 :
+        {
+            SCPkgTypes::SC_Order_Create_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 29 :
+        {
+            SCPkgTypes::SC_Order_Create_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 30 :
+        {
+            SCPkgTypes::SC_Express_GetAll_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 31 :
+        {
+            SCPkgTypes::SC_Express_GetAll_Date myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 32 :
+        {
+            SCPkgTypes::SC_Express_GetAll_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 33 :
+        {
+            SCPkgTypes::SC_UncompletedOrder_GetList_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 34 :
+        {
+            SCPkgTypes::SC_UncompletedOrder_GetList_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 35 :
+        {
+            SCPkgTypes::SC_UncompletedOrder_GetList_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 36 :
+        {
+            SCPkgTypes::SC_Order_GetDetails_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 37 :
+        {
+            SCPkgTypes::SC_Order_GetDetails_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 38 :
+        {
+            SCPkgTypes::SC_Order_UpdateTotal_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 39 :
+        {
+            SCPkgTypes::SC_Order_UpdateTotal_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 40 :
+        {
+            SCPkgTypes::SC_Customer_Order_Confirm_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 41 :
+        {
+            SCPkgTypes::SC_Customer_Order_Confirm_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 42 :
+        {
+            SCPkgTypes::SC_Get_Payment_Platform_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 43 :
+        {
+            SCPkgTypes::SC_Get_Payment_Platform_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 44 :
+        {
+            SCPkgTypes::SC_Get_Payment_Platform_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 45 :
+        {
+            SCPkgTypes::SC_Customer_Deliver_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 46 :
+        {
+            SCPkgTypes::SC_Customer_Deliver_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 47 :
+        {
+            SCPkgTypes::SC_Accountant_Receipt_Confirm_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 48 :
+        {
+            SCPkgTypes::SC_Accountant_Receipt_Confirm_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 49 :
+        {
+            SCPkgTypes::SC_Accountant_Create_Report_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 50 :
+        {
+            SCPkgTypes::SC_Accountant_Create_Report_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 51 :
+        {
+            SCPkgTypes::SC_Get_Report_Month_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 52 :
+        {
+            SCPkgTypes::SC_Get_Report_Month_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 53 :
+        {
+            SCPkgTypes::SC_Get_Report_Quarter_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 54 :
+        {
+            SCPkgTypes::SC_Get_Report_Quarter_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 55 :
+        {
+            SCPkgTypes::SC_Customer_Report_Confirm_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 56 :
+        {
+            SCPkgTypes::SC_Customer_Report_Confirm_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 57 :
+        {
+            SCPkgTypes::SC_Accountant_Send_Back_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 58 :
+        {
+            SCPkgTypes::SC_Accountant_Send_Back_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 59 :
+        {
+            SCPkgTypes::SC_Customer_Order_Recive_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 60 :
+        {
+            SCPkgTypes::SC_Customer_Order_Recive_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 61 :
+        {
+            SCPkgTypes::SC_Customer_Order_Back_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 62 :
+        {
+            SCPkgTypes::SC_Customer_Order_Back_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 63 :
+        {
+            SCPkgTypes::SC_Accountant_Cancel_Order_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 64 :
+        {
+            SCPkgTypes::SC_Accountant_Cancel_Order_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 65 :
+        {
+            SCPkgTypes::SC_Customer_Cancel_Order_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 66 :
+        {
+            SCPkgTypes::SC_Customer_Cancel_Order_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 67 :
+        {
+            SCPkgTypes::SC_Accountant_GetList_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 68 :
+        {
+            SCPkgTypes::SC_Accountant_GetList_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 69 :
+        {
+            SCPkgTypes::SC_Accountant_GetList_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 70 :
+        {
+            SCPkgTypes::SC_CompeletedOrder_GetList_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 71 :
+        {
+            SCPkgTypes::SC_CompeletedOrder_GetList_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 72 :
+        {
+            SCPkgTypes::SC_CompeletedOrder_GetList_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 73 :
+        {
+            SCPkgTypes::SC_Grade_AccountantService_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 74 :
+        {
+            SCPkgTypes::SC_Grade_AccountantService_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 75 :
+        {
+            SCPkgTypes::SC_AccountantCredentials_Upload_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 76 :
+        {
+            SCPkgTypes::SC_AccountantCredentials_Upload_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 77 :
+        {
+            SCPkgTypes::SC_UnionPayTn_Get_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 78 :
+        {
+            SCPkgTypes::SC_UnionPayTn_Get_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 79 :
+        {
+            SCPkgTypes::SC_ReportFile_Upload_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 80 :
+        {
+            SCPkgTypes::SC_ReportFile_Upload_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 81 :
+        {
+            SCPkgTypes::SC_ReportFile_Download_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 82 :
+        {
+            SCPkgTypes::SC_ReportFile_Download_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 83 :
+        {
+            SCPkgTypes::SC_ReportFile_Delete_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 84 :
+        {
+            SCPkgTypes::SC_ReportFile_Delete_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 85 :
+        {
+            SCPkgTypes::SC_GetAccountantUncompletedOrderList_web_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 86 :
+        {
+            SCPkgTypes::SC_GetAccountantUncompletedOrderList_web_file_info myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 87 :
+        {
+            SCPkgTypes::SC_GetAccountantUncompletedOrderList_web_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 88 :
+        {
+            SCPkgTypes::SC_GetAccountantUncompletedOrderList_web_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 89 :
+        {
+            SCPkgTypes::SC_AccountantElectronicBusinessCard_Get_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 90 :
+        {
+            SCPkgTypes::SC_AccountantElectronicBusinessCard_Get_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 91 :
+        {
+            SCPkgTypes::SC_Communication_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 92 :
+        {
+            SCPkgTypes::SC_AccountanPictureDown_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 93 :
+        {
+            SCPkgTypes::SC_AccountanPictureDown_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 94 :
+        {
+            SCPkgTypes::SC_AccountanPictureDown_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 95 :
+        {
+            SCPkgTypes::SC_FindReportCustom_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 96 :
+        {
+            SCPkgTypes::SC_FindReportCustom_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 97 :
+        {
+            SCPkgTypes::SC_FindReportCustom_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 98 :
+        {
+            SCPkgTypes::SC_Customer_UploadElectronicBill_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 99 :
+        {
+            SCPkgTypes::SC_Customer_UploadElectronicBill_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 100 :
+        {
+            SCPkgTypes::SC_GetElectronicBill_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 101 :
+        {
+            SCPkgTypes::SC_GetElectronicBill_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 102 :
+        {
+            SCPkgTypes::SC_GetElectronicBill_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 103 :
+        {
+            SCPkgTypes::SC_CustomerGetOrderState_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 104 :
+        {
+            SCPkgTypes::SC_CustomerGetOrderState_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 105 :
+        {
+            SCPkgTypes::SC_CustomerGetOrderState_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 106 :
+        {
+            SCPkgTypes::SC_ReportFile_Upload_Year_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 107 :
+        {
+            SCPkgTypes::SC_ReportFile_Upload_Year_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 108 :
+        {
+            SCPkgTypes::SC_ReportFile_Upload_Quarter_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 109 :
+        {
+            SCPkgTypes::SC_ReportFile_Upload_Quarter_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 110 :
+        {
+            SCPkgTypes::SC_ReportFile_Upload_Month_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 111 :
+        {
+            SCPkgTypes::SC_ReportFile_Upload_Month_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 112 :
+        {
+            SCPkgTypes::SC_ReportFile_Download_Year_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 113 :
+        {
+            SCPkgTypes::SC_ReportFile_Download_Year_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 114 :
+        {
+            SCPkgTypes::SC_ReportFile_Download_Quarter_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 115 :
+        {
+            SCPkgTypes::SC_ReportFile_Download_Quarter_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 116 :
+        {
+            SCPkgTypes::SC_ReportFile_Download_Month_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 117 :
+        {
+            SCPkgTypes::SC_ReportFile_Download_Month_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 118 :
+        {
+            SCPkgTypes::SC_ReportFileList_Download_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 119 :
+        {
+            SCPkgTypes::SC_ReportFileList_Download_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 120 :
+        {
+            SCPkgTypes::SC_ReportFileList_Download_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 121 :
+        {
+            SCPkgTypes::SC_ReportFileOrder_Download_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 122 :
+        {
+            SCPkgTypes::SC_ReportFileOrder_Download_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 123 :
+        {
+            SCPkgTypes::SC_CheckAccountantInformation_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 124 :
+        {
+            SCPkgTypes::SC_CheckAccountantInformation_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 125 :
+        {
+            SCPkgTypes::SC_CheckAccountantInformation_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 126 :
+        {
+            SCPkgTypes::SC_CheckReportFileFromID_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 127 :
+        {
+            SCPkgTypes::SC_CheckReportFileFromID_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 128 :
+        {
+            SCPkgTypes::SC_ReportFile_Find_Year_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 129 :
+        {
+            SCPkgTypes::SC_ReportFile_Find_Year_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 130 :
+        {
+            SCPkgTypes::SC_ReportFile_Find_Quarter_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 131 :
+        {
+            SCPkgTypes::SC_ReportFile_Find_Quarter_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 132 :
+        {
+            SCPkgTypes::SC_ReportFile_Find_Month_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 133 :
+        {
+            SCPkgTypes::SC_ReportFile_Find_Month_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 134 :
+        {
+            SCPkgTypes::SC_DealAccountantList_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 135 :
+        {
+            SCPkgTypes::SC_DealAccountantList_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 136 :
+        {
+            SCPkgTypes::SC_DealAccountantList_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 137 :
+        {
+            SCPkgTypes::SC_ChangeAccountantInformation_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 138 :
+        {
+            SCPkgTypes::SC_ChangeAccountantInformation_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 139 :
+        {
+            SCPkgTypes::SC_ReturnAccountantInformation_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 140 :
+        {
+            SCPkgTypes::SC_ReturnAccountantInformation_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 141 :
+        {
+            SCPkgTypes::SC_AccountantHomePage_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 142 :
+        {
+            SCPkgTypes::SC_AccountantHomePage_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 143 :
+        {
+            SCPkgTypes::SC_CustomerAnonymous_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 144 :
+        {
+            SCPkgTypes::SC_CustomerAnonymous_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 145 :
+        {
+            SCPkgTypes::SC_Anonymous_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 146 :
+        {
+            SCPkgTypes::SC_FindAccountantCredentials_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 147 :
+        {
+            SCPkgTypes::SC_FindAccountantCredentials_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 148 :
+        {
+            SCPkgTypes::SC_FindAccountantCredentials_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 149 :
+        {
+            SCPkgTypes::SC_AccountantFindCustomer_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 150 :
+        {
+            SCPkgTypes::SC_AccountantFindCustomer_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 151 :
+        {
+            SCPkgTypes::SC_AccountantFindCustomer_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 152 :
+        {
+            SCPkgTypes::SC_AcountantFindCustomerDetail_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 153 :
+        {
+            SCPkgTypes::SC_AcountantFindCustomerDetail_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 154 :
+        {
+            SCPkgTypes::SC_UserChangeIcon_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 155 :
+        {
+            SCPkgTypes::SC_UserChangeIcon_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 156 :
+        {
+            SCPkgTypes::SC_CustomerHomePage_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 157 :
+        {
+            SCPkgTypes::SC_CustomerHomePage_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 158 :
+        {
+            SCPkgTypes::SC_FindPushMessage_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 159 :
+        {
+            SCPkgTypes::SC_FindPushMessage_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 160 :
+        {
+            SCPkgTypes::SC_FindPushMessage_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 161 :
+        {
+            SCPkgTypes::SC_AccountantFindDocment_Success_Data myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 162 :
+        {
+            SCPkgTypes::SC_AccountantFindDocment_Success myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    case 163 :
+        {
+            SCPkgTypes::SC_AccountantFindDocment_Failure myItem;
+            auto v= bb.Read( myItem );
+            if(!v)
+            {
+                cout<<"ByteBuffer error"<<endl;
+            }
+            
+            // code here
+
+            break;
+        }
+    default:
+        break;
+}
